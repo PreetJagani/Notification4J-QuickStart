@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Spinner;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -17,6 +18,8 @@ public class MainSceneController implements Initializable {
     public TextField subTitle;
     @FXML
     public ComboBox soundPicker;
+    @FXML
+    public Spinner actions;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Text?>
-<?import com.sun.javafx.scene.control.FakeFocusTextField?>
-<?import org.controlsfx.control.textfield.CustomTextField?>
-<?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="controllers.MainSceneController"
@@ -17,19 +11,23 @@
       spacing="30"
       prefHeight="400.0" prefWidth="600.0">
 
-    <HBox alignment="CENTER" spacing="12">
-        <VBox alignment="CENTER_RIGHT" spacing="30">
-            <Text text="Title : "/>
-            <Text text="Sub Title : "/>
-            <Text text="Sound : "/>
-        </VBox>
+    <VBox styleClass="background">
+        <HBox alignment="CENTER" spacing="12">
+            <VBox alignment="CENTER_LEFT" spacing="30">
+                <Text text="Title : "/>
+                <Text text="Sub Title : "/>
+                <Text text="Sound : "/>
+                <Text text="Actions : "/>
+            </VBox>
 
-        <VBox alignment="CENTER_LEFT" spacing="30">
-            <TextField fx:id="title" maxWidth="200"/>
-            <TextField fx:id="subTitle" maxWidth="200"/>
-            <ComboBox fx:id="soundPicker"/>
-        </VBox>
-    </HBox>
+            <VBox alignment="CENTER_LEFT" spacing="20">
+                <TextField fx:id="title" maxWidth="200"/>
+                <TextField fx:id="subTitle" maxWidth="200"/>
+                <ComboBox fx:id="soundPicker"/>
+                <Spinner fx:id="actions"/>
+            </VBox>
+        </HBox>
+    </VBox>
 
     <Button text="Show" focusTraversable="false"/>
 

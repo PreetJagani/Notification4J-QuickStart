@@ -27,6 +27,7 @@ public class MainApplication extends Application {
             primaryStage.setHeight(500);
             primaryStage.setWidth(500);
             primaryStage.setScene(s);
+            primaryStage.setTitle("Notification4J");
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();

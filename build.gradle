@@ -18,6 +18,8 @@ javafx {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation 'org.jfxtras:jmetro:11.6.15'
 }
 
 mainClassName = 'MainApplication'

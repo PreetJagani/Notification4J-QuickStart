@@ -3,6 +3,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import jfxtras.styles.jmetro.JMetro;
+import jfxtras.styles.jmetro.Style;
 
 import java.io.IOException;
 
@@ -21,6 +23,7 @@ public class MainApplication extends Application {
         try {
             Parent root = loader.load();
             Scene s = new Scene(root);
+            new JMetro(s, Style.LIGHT);
             primaryStage.setHeight(500);
             primaryStage.setWidth(500);
             primaryStage.setScene(s);
@@ -28,6 +31,6 @@ public class MainApplication extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
     }
 }

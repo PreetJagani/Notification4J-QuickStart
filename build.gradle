@@ -11,6 +11,12 @@ repositories {
     mavenCentral()
 }
 
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 javafx {
     version = "15.0.1"
     modules = ['javafx.controls', 'javafx.fxml', 'javafx.swing', 'javafx.media', 'javafx.base', 'javafx.graphics']
@@ -20,6 +26,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
     implementation 'org.jfxtras:jmetro:11.6.15'
+    implementation 'com.github.PreetJagani:Notification4J:v1.0.1'
 }
 
 mainClassName = 'MainApplication'

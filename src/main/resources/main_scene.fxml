@@ -29,6 +29,6 @@
         </HBox>
     </VBox>
 
-    <Button text="Show" focusTraversable="false"/>
+    <Button fx:id="showBtn" text="Show" focusTraversable="false"/>
 
 </VBox>

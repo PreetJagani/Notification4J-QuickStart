@@ -24,6 +24,8 @@ public class MainSceneController implements Initializable {
     public Spinner actions;
     @FXML
     public Button showBtn;
+    @FXML
+    public CheckBox avatar;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -42,7 +44,11 @@ public class MainSceneController implements Initializable {
 
         showBtn.setOnMouseClicked(event -> {
 
-            String avatarPath = new File(this.getClass().getResource("/avatar.png").getPath()).getAbsolutePath();
+            String avatarPath = null;
+
+            if (avatar.isSelected()) {
+                avatarPath = new File(this.getClass().getResource("/avatar.png").getPath()).getAbsolutePath();
+            }
 
             int action = (Integer)actions.getValue();
 

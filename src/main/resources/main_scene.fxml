@@ -11,7 +11,7 @@
       spacing="30"
       prefHeight="400.0" prefWidth="600.0">
 
-    <VBox styleClass="background">
+    <VBox styleClass="background" spacing="20" alignment="CENTER">
         <HBox alignment="CENTER" spacing="12">
             <VBox alignment="CENTER_LEFT" spacing="30">
                 <Text text="Title : "/>
@@ -27,6 +27,7 @@
                 <Spinner fx:id="actions"/>
             </VBox>
         </HBox>
+        <CheckBox fx:id="avatar" text="Avatar" focusTraversable="false" selected="true"/>
     </VBox>
 
     <Button fx:id="showBtn" text="Show" focusTraversable="false"/>

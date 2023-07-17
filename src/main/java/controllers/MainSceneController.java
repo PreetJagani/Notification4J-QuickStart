@@ -1,11 +1,11 @@
 package controllers;
 
+import com.notification4J.NotificationManager;
+import com.notification4J.NotificationSound;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import main.NotificationManager;
-import main.NotificationSound;
 
 import java.io.File;
 import java.net.URL;

@@ -1,3 +1,4 @@
+import com.notification4J.NotificationManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -5,8 +6,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import jfxtras.styles.jmetro.JMetro;
 import jfxtras.styles.jmetro.Style;
-import main.NotificationManager;
-import main.NotificationSound;
 
 import java.io.IOException;
 
@@ -21,7 +20,7 @@ public class MainApplication extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-        NotificationManager.init("Notification4J", "Notification4J.ID");
+        NotificationManager.init("Notification4J.QuickStart", "Notification4J.ID");
 
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/main_scene.fxml"));
         try {
